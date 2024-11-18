@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .button {
+            border: none;
+            background-color: rgb(255, 216, 20);
+            color: black;
+            width: 150px;
+            height: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <button onclick="
+      console.log(`Car Quantity: ${cartQuantity}`);
+      ">Show Quantity</button>
+    <button onclick="
+    cartQuantity +=1;
+    console.log(`Car Quantity: ${cartQuantity}`);
+    " class="button">Add to Cart</button>
+    <button onclick="
+    cartQuantity +=2;
+    console.log(`Car Quantity: ${cartQuantity}`);
+    ">+2</button>
+    <button onclick="
+    cartQuantity +=3;
+    console.log(`Car Quantity: ${cartQuantity}`);
+    ">+3</button>
+    <button onclick="
+    cartQuantity +=4;
+    console.log(`Car Quantity: ${cartQuantity}`);
+    ">+4</button>
+    <button onclick="
+    cartQuantity +=5;
+    console.log(`Car Quantity: ${cartQuantity}`);
+    ">+5</button>
+    <button onclick="
+    cartQuantity = 0;
+    console.log('Cart was reset.');
+    console.log(`Car Quantity: ${cartQuantity}`);
+    ">Reset Cart</button>
+    <button onclick="
+    cartQuantity--;
+    console.log(`Car Quantity: ${cartQuantity}`);
+    ">Remove from Cart</button>
+    <button onclick="
+    cartQuantity -=2;
+    console.log(`Car Quantity: ${cartQuantity}`);
+    ">-2</button>
+    <button onclick="
+    cartQuantity -=3;
+    console.log(`Car Quantity: ${cartQuantity}`);
+    ">-3</button>
+    <script>
+      let cartQuantity = 0;
+      if (0 > cartQuantity) {
+        console.log("Dalbayeb kakayou naxuy quantity<0")
+      }
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <!--<button id="mybutton" onclick="finished()">Start</button>
+    <button id="id" onclick="addto()">Add to cart</button>
+    <button onclick="" class="js-button">Click</button>-->
+    
+    <script>
+      /*
+      const buttonElement = document.querySelector('.js-button');
+      const eventListener = ()=>{
+        console.log('click');
+      };
+      
+      buttonElement.addEventListener('click',eventListener);
+      
+
+      buttonElement.removeEventListener('click',eventListener);
+
+      buttonElement.addEventListener('click',()=>{
+        console.log('suicide');
+      });
+      */
+    /*
+      function greeting() {
+        console.log('hell');
+      }
+      greeting();
+      const num = 2;
+      const function1 = function greeting() {
+        console.log(`hell2`);
+      };
+      console.log(function1);
+      console.log(typeof function1);
+      function1();
+
+
+      const object1 = {
+        num:2,
+        fun:function greeting() {
+            console.log("hell3");
+        }
+      };
+      object1.fun();
+
+      function display(param) {
+        console.log(param);
+      }
+      display(2);
+
+      function run(param) {
+        param();
+      }
+      run(function() {
+        console.log("hell4");
+      });
+    */
+    /*
+    setTimeout(function(){
+        console.log('timeout');
+        console.log('timeout2');
+    }, 3000);
+
+    console.log("next line");
+
+    setInterval(function() {
+        console.log('interval');
+    }, 3000);
+
+    console.log('next line 2');
+    */
+
+    // [
+    //   'make dinner',
+    //   'make lunch',
+
+    //   'watch shorts'
+    // ].forEach((value,index) => {
+    //   if (value === 'make dinner') {
+    //     return;
+    //   }
+
+    //   console.log(value);
+    //   console.log(index);
+    // });
+
+    // function add() {
+    //   console.log(3+5);
+    // }
+    
+    // function runTwice(fun) {
+    //   fun();
+    //   fun();
+    // }
+    // runTwice(add);
+
+    // function finished() {
+    //   const element = document.getElementById("mybutton");
+    //   element.innerHTML = "Loading";
+
+    //   setTimeout(() => {
+    //     element.innerHTML = "Finished";
+    //   },2000);
+
+    //   setTimeout(() => {
+    //     element.innerHTML = "Start";
+    //   },3000);
+      
+    // }
+    /*
+    function addto() {
+      const element = document.getElementById("id");
+      element.innerHTML = "Add to cart";
+      setTimeout(() => {
+        element.innerHTML = "Added";
+      },2000);
+      setTimeout(() => {
+        element.innerHTML = "Add to Cart";
+      },3000);
+    }
+      */
+    /*
+    const regularFunct = function(param,param2)  {
+      console.log('hell');
+      return 5;
+    };
+
+     const arrowFunct = (param,param2) => {
+      console.log('hell');
+      return 5;
+     };
+     arrowFunct();
+
+     const oneParam = param => {
+      console.log(param+1); 
+     };
+     oneParam(2);
+
+     const oneLine = () => 2+5;
+     console.log(oneLine());
+
+     const object2 = {
+      method: () => {
+
+      },
+      method() {
+
+      }
+     };
+     */
+
+     /*
+     console.log([1,-42,64].filter((value,index)=> {
+      return value>=0;
+     }));
+     console.log([4,4,3,3,2,32,32,32,23342].map((value,index)=>{
+        return value*10;
+     }));
+
+     console.log([4,4,3,3,2,32,32,32,23342].map(value=>value*10));
+     */
+
+     const multiple = (variable,variable1) => {return variable+variable1};
+     console.log(multiple(3,5));
+
+     const countPositive = (nums) => { 
+      let count = 0;
+      nums.forEach(num => {
+        if (num>0){
+        count++;
+        }
+      });
+      return count;
+    };
+    console.log(countPositive([1, -2, 3, 4, -5]));
+
+    console.log([1,432,42,4563,534534,66346,43].map(num=>num*2));
+
+    const removeEgg = (foods) => {
+    return foods.filter(foods => foods !== 'egg');
+    };
+
+    console.log(removeEgg(['bread','egg','buter','egg','water']));
+    </script>
+  </body>
+</html>
